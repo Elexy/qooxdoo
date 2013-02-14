@@ -44,7 +44,7 @@ qx.Mixin.define("qx.ui.mobile.form.MText",
     this.initPlaceholder();
     this.initReadOnly();
 
-    this.addListener("keypress",function(e) {
+    this.addListener("keyup",function(e) {
       // On return
       if(e.getKeyCode() == 13) {
         this.blur();
